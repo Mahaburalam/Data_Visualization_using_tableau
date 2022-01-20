@@ -1,0 +1,1471 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.19.0909.2030                               -->
+<workbook original-version='10.3' source-build='10.3.25 (10300.19.0909.2030)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='percentage rediction' inline='true' name='federated.02xz7bo0yifplw151svjl0ccemgy' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='percentage rediction' name='textscan.159duij1yren8g1591fyg1x0r5ai'>
+            <connection class='textscan' directory='E:/DIU Dropout solution' filename='percentage rediction.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.159duij1yren8g1591fyg1x0r5ai' name='percentage rediction.csv' table='[percentage rediction#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='StudentID' ordinal='0' />
+            <column datatype='integer' name='Faculty(CSE-EEE-BBA)' ordinal='1' />
+            <column datatype='integer' name='Semester(Spring-Fall-Summer)' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='integer' name='CompletedCredit' ordinal='4' />
+            <column datatype='real' name='AssignmentMarks' ordinal='5' />
+            <column datatype='integer' name='NumberOfCounseling' ordinal='6' />
+            <column datatype='integer' name='NumberOfCourseRetake' ordinal='7' />
+            <column datatype='integer' name='NumberOfCourseDrop' ordinal='8' />
+            <column datatype='real' name='AverageQuizMarkforallSubject' ordinal='9' />
+            <column datatype='integer' name='MidTermaveragemarks' ordinal='10' />
+            <column datatype='real' name='SemesterFinalResult' ordinal='11' />
+            <column datatype='real' name='CGPA' ordinal='12' />
+            <column datatype='real' name='SGPA' ordinal='13' />
+            <column datatype='integer' name='TotalClass' ordinal='14' />
+            <column datatype='integer' name='TotalAttendance' ordinal='15' />
+            <column datatype='integer' name='ClasstestaverageResult' ordinal='16' />
+            <column datatype='integer' name='Academiccontribution(Yes=1-No=0)' ordinal='17' />
+            <column datatype='integer' name='SchoolName' ordinal='18' />
+            <column datatype='integer' name='SchoolEIIN' ordinal='19' />
+            <column datatype='integer' name='Group(Science-Arts-Commerse)' ordinal='20' />
+            <column datatype='integer' name='PassingYear' ordinal='21' />
+            <column datatype='integer' name='Result' ordinal='22' />
+            <column datatype='integer' name='CollegeName' ordinal='23' />
+            <column datatype='integer' name='CollegeEIIN' ordinal='24' />
+            <column datatype='integer' name='Group(Science-Arts-Commerse).1' ordinal='25' />
+            <column datatype='integer' name='PassingYear.1' ordinal='26' />
+            <column datatype='integer' name='Result.1' ordinal='27' />
+            <column datatype='integer' name='DiplomaStudent' ordinal='28' />
+            <column datatype='integer' name='InstitutionName' ordinal='29' />
+            <column datatype='integer' name='PassingYear.2' ordinal='30' />
+            <column datatype='integer' name='Result11' ordinal='31' />
+            <column datatype='integer' name='Name' ordinal='32' />
+            <column datatype='integer' name='Gender' ordinal='33' />
+            <column datatype='integer' name='Religion' ordinal='34' />
+            <column datatype='integer' name='Married(1es-2o)' ordinal='35' />
+            <column datatype='integer' name='Areyouserviceholder(Yes-No)' ordinal='36' />
+            <column datatype='integer' name='Getanyfinancialaidtovarsity(Yes-No)' ordinal='37' />
+            <column datatype='integer' name='District' ordinal='38' />
+            <column datatype='integer' name='Thana' ordinal='39' />
+            <column datatype='integer' name='TotalFamilymember' ordinal='40' />
+            <column datatype='integer' name='NumberofBrother' ordinal='41' />
+            <column datatype='integer' name='NumberSister' ordinal='42' />
+            <column datatype='integer' name='Yourguardian(Father-Mother-Brother-Sister-Myself-Relative-Others)' ordinal='43' />
+            <column datatype='integer' name='Howtocontributeyourstudy(Father-Mother-Brother-Sister-Myself-Relative-Others)' ordinal='44' />
+            <column datatype='integer' name='Familyearnableperson(Numericnumber)' ordinal='45' />
+            <column datatype='integer' name='Familymonthlyincome(Numericnumber)' ordinal='46' />
+            <column datatype='integer' name='GuardianIncomeSource(Business-GovJob-PrivateService-Others)' ordinal='47' />
+            <column datatype='integer' name='GuardianFinancialStatus' ordinal='48' />
+            <column datatype='integer' name='Paymentstatus' ordinal='49' />
+            <column datatype='integer' name='TotalPaymentDue' ordinal='50' />
+            <column datatype='integer' name='PaymentHistory' ordinal='51' />
+            <column datatype='integer' name='Dropout(dropout=1-notdropout=0)' ordinal='52' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>StudentID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StudentID]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>StudentID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Faculty(CSE-EEE-BBA)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Faculty(CSE-EEE-BBA)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Faculty(CSE-EEE-BBA)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Semester(Spring-Fall-Summer)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Semester(Spring-Fall-Summer)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Semester(Spring-Fall-Summer)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CompletedCredit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CompletedCredit]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>CompletedCredit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AssignmentMarks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AssignmentMarks]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>AssignmentMarks</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfCounseling</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberOfCounseling]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>NumberOfCounseling</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfCourseRetake</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberOfCourseRetake]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>NumberOfCourseRetake</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfCourseDrop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberOfCourseDrop]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>NumberOfCourseDrop</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AverageQuizMarkforallSubject</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AverageQuizMarkforallSubject]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>AverageQuizMarkforallSubject</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MidTermaveragemarks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MidTermaveragemarks]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>MidTermaveragemarks</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SemesterFinalResult</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SemesterFinalResult]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>SemesterFinalResult</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CGPA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CGPA]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>CGPA</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SGPA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SGPA]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>SGPA</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalClass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalClass]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>TotalClass</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalAttendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalAttendance]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>TotalAttendance</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClasstestaverageResult</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClasstestaverageResult]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>ClasstestaverageResult</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Academiccontribution(Yes=1-No=0)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Academiccontribution(Yes=1-No=0)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Academiccontribution(Yes=1-No=0)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SchoolName</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SchoolName]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>SchoolName</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SchoolEIIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SchoolEIIN]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>SchoolEIIN</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group(Science-Arts-Commerse)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Group(Science-Arts-Commerse)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Group(Science-Arts-Commerse)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassingYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PassingYear]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>PassingYear</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CollegeName</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CollegeName]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>CollegeName</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CollegeEIIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CollegeEIIN]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>CollegeEIIN</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group(Science-Arts-Commerse).1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Group(Science-Arts-Commerse).1]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Group(Science-Arts-Commerse).1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassingYear.1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PassingYear.1]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>PassingYear.1</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result.1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Result.1]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Result.1</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiplomaStudent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DiplomaStudent]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>DiplomaStudent</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InstitutionName</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InstitutionName]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>InstitutionName</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassingYear.2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PassingYear.2]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>PassingYear.2</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Result11]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Result11</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Religion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Religion]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Religion</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Married(1es-2o)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Married(1es-2o)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Married(1es-2o)</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Areyouserviceholder(Yes-No)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Areyouserviceholder(Yes-No)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Areyouserviceholder(Yes-No)</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Getanyfinancialaidtovarsity(Yes-No)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Getanyfinancialaidtovarsity(Yes-No)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Getanyfinancialaidtovarsity(Yes-No)</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Thana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Thana]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Thana</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalFamilymember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalFamilymember]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>TotalFamilymember</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberofBrother</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberofBrother]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>NumberofBrother</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberSister</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberSister]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>NumberSister</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yourguardian(Father-Mother-Brother-Sister-Myself-Relative-Others)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Yourguardian(Father-Mother-Brother-Sister-Myself-Relative-Others)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Yourguardian(Father-Mother-Brother-Sister-Myself-Relative-Others)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Howtocontributeyourstudy(Father-Mother-Brother-Sister-Myself-Relative-Others)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Howtocontributeyourstudy(Father-Mother-Brother-Sister-Myself-Relative-Others)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Howtocontributeyourstudy(Father-Mother-Brother-Sister-Myself-Relative-Others)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Familyearnableperson(Numericnumber)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Familyearnableperson(Numericnumber)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Familyearnableperson(Numericnumber)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Familymonthlyincome(Numericnumber)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Familymonthlyincome(Numericnumber)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Familymonthlyincome(Numericnumber)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GuardianIncomeSource(Business-GovJob-PrivateService-Others)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GuardianIncomeSource(Business-GovJob-PrivateService-Others)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>GuardianIncomeSource(Business-GovJob-PrivateService-Others)</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GuardianFinancialStatus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GuardianFinancialStatus]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>GuardianFinancialStatus</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paymentstatus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Paymentstatus]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Paymentstatus</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPaymentDue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPaymentDue]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>TotalPaymentDue</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentHistory</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PaymentHistory]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>PaymentHistory</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dropout(dropout=1-notdropout=0)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dropout(dropout=1-notdropout=0)]</local-name>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias>Dropout(dropout=1-notdropout=0)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[percentage rediction.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Assignment Marks' datatype='real' name='[AssignmentMarks]' role='measure' type='quantitative' />
+      <column caption='Average Quiz Markforall Subject' datatype='real' name='[AverageQuizMarkforallSubject]' role='measure' type='quantitative' />
+      <column caption='Cgpa' datatype='real' name='[CGPA]' role='measure' type='quantitative' />
+      <column caption='Classtestaverage Result' datatype='integer' name='[ClasstestaverageResult]' role='measure' type='quantitative' />
+      <column caption='College EIIN' datatype='integer' name='[CollegeEIIN]' role='measure' type='quantitative' />
+      <column caption='College Name' datatype='integer' name='[CollegeName]' role='measure' type='quantitative' />
+      <column caption='Completed Credit' datatype='integer' name='[CompletedCredit]' role='measure' type='quantitative' />
+      <column caption='Diploma Student' datatype='integer' name='[DiplomaStudent]' role='measure' type='quantitative' />
+      <column caption='Guardian Financial Status' datatype='integer' name='[GuardianFinancialStatus]' role='measure' type='quantitative' />
+      <column caption='Institution Name' datatype='integer' name='[InstitutionName]' role='measure' type='quantitative' />
+      <column caption='Mid Termaveragemarks' datatype='integer' name='[MidTermaveragemarks]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Number Of Counseling' datatype='integer' name='[NumberOfCounseling]' role='measure' type='quantitative' />
+      <column caption='Number Of Course Drop' datatype='integer' name='[NumberOfCourseDrop]' role='measure' type='quantitative' />
+      <column caption='Number Of Course Retake' datatype='integer' name='[NumberOfCourseRetake]' role='measure' type='quantitative' />
+      <column caption='Number Sister' datatype='integer' name='[NumberSister]' role='measure' type='quantitative' />
+      <column caption='Numberof Brother' datatype='integer' name='[NumberofBrother]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[PassingYear.1]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[PassingYear.2]' role='dimension' type='quantitative' />
+      <column caption='Passing Year' datatype='integer' name='[PassingYear]' role='dimension' type='quantitative' />
+      <column caption='Payment History' datatype='integer' name='[PaymentHistory]' role='measure' type='quantitative' />
+      <column caption='Sgpa' datatype='real' name='[SGPA]' role='measure' type='quantitative' />
+      <column caption='School EIIN' datatype='integer' name='[SchoolEIIN]' role='measure' type='quantitative' />
+      <column caption='School Name' datatype='integer' name='[SchoolName]' role='measure' type='quantitative' />
+      <column caption='Semester Final Result' datatype='real' name='[SemesterFinalResult]' role='measure' type='quantitative' />
+      <column caption='Student ID' datatype='integer' name='[StudentID]' role='dimension' type='ordinal' />
+      <column caption='Total Attendance' datatype='integer' name='[TotalAttendance]' role='measure' type='quantitative' />
+      <column caption='Total Class' datatype='integer' name='[TotalClass]' role='measure' type='quantitative' />
+      <column caption='Total Familymember' datatype='integer' name='[TotalFamilymember]' role='measure' type='quantitative' />
+      <column caption='Total Payment Due' datatype='integer' name='[TotalPaymentDue]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.261411' measure-ordering='alphabetic' measure-percentage='0.738589' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='percentage rediction' name='federated.02xz7bo0yifplw151svjl0ccemgy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02xz7bo0yifplw151svjl0ccemgy'>
+            <column datatype='integer' name='[Academiccontribution(Yes=1-No=0)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Areyouserviceholder(Yes-No)]' role='measure' type='quantitative' />
+            <column caption='Assignment Marks' datatype='real' name='[AssignmentMarks]' role='measure' type='quantitative' />
+            <column caption='Average Quiz Markforall Subject' datatype='real' name='[AverageQuizMarkforallSubject]' role='measure' type='quantitative' />
+            <column caption='Cgpa' datatype='real' name='[CGPA]' role='measure' type='quantitative' />
+            <column caption='Classtestaverage Result' datatype='integer' name='[ClasstestaverageResult]' role='measure' type='quantitative' />
+            <column caption='College EIIN' datatype='integer' name='[CollegeEIIN]' role='measure' type='quantitative' />
+            <column caption='College Name' datatype='integer' name='[CollegeName]' role='measure' type='quantitative' />
+            <column caption='Completed Credit' datatype='integer' name='[CompletedCredit]' role='measure' type='quantitative' />
+            <column caption='Diploma Student' datatype='integer' name='[DiplomaStudent]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[District]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Dropout(dropout=1-notdropout=0)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Faculty(CSE-EEE-BBA)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Familyearnableperson(Numericnumber)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Familymonthlyincome(Numericnumber)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Gender]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Getanyfinancialaidtovarsity(Yes-No)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Group(Science-Arts-Commerse).1]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Group(Science-Arts-Commerse)]' role='measure' type='quantitative' />
+            <column caption='Guardian Financial Status' datatype='integer' name='[GuardianFinancialStatus]' role='measure' type='quantitative' />
+            <column-instance column='[Academiccontribution(Yes=1-No=0)]' derivation='Sum' name='[sum:Academiccontribution(Yes=1-No=0):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Areyouserviceholder(Yes-No)]' derivation='Sum' name='[sum:Areyouserviceholder(Yes-No):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AssignmentMarks]' derivation='Sum' name='[sum:AssignmentMarks:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AverageQuizMarkforallSubject]' derivation='Sum' name='[sum:AverageQuizMarkforallSubject:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CGPA]' derivation='Sum' name='[sum:CGPA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ClasstestaverageResult]' derivation='Sum' name='[sum:ClasstestaverageResult:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CollegeEIIN]' derivation='Sum' name='[sum:CollegeEIIN:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CollegeName]' derivation='Sum' name='[sum:CollegeName:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CompletedCredit]' derivation='Sum' name='[sum:CompletedCredit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DiplomaStudent]' derivation='Sum' name='[sum:DiplomaStudent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[District]' derivation='Sum' name='[sum:District:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dropout(dropout=1-notdropout=0)]' derivation='Sum' name='[sum:Dropout(dropout=1-notdropout=0):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Faculty(CSE-EEE-BBA)]' derivation='Sum' name='[sum:Faculty(CSE-EEE-BBA):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Familyearnableperson(Numericnumber)]' derivation='Sum' name='[sum:Familyearnableperson(Numericnumber):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Familymonthlyincome(Numericnumber)]' derivation='Sum' name='[sum:Familymonthlyincome(Numericnumber):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='Sum' name='[sum:Gender:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Getanyfinancialaidtovarsity(Yes-No)]' derivation='Sum' name='[sum:Getanyfinancialaidtovarsity(Yes-No):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Group(Science-Arts-Commerse).1]' derivation='Sum' name='[sum:Group(Science-Arts-Commerse).1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Group(Science-Arts-Commerse)]' derivation='Sum' name='[sum:Group(Science-Arts-Commerse):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GuardianFinancialStatus]' derivation='Sum' name='[sum:GuardianFinancialStatus:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02xz7bo0yifplw151svjl0ccemgy].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Academiccontribution(Yes=1-No=0):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Areyouserviceholder(Yes-No):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:AssignmentMarks:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:AverageQuizMarkforallSubject:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:CGPA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:ClasstestaverageResult:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:CollegeEIIN:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:CollegeName:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:CompletedCredit:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:DiplomaStudent:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:District:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Dropout(dropout=1-notdropout=0):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Faculty(CSE-EEE-BBA):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Familyearnableperson(Numericnumber):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Familymonthlyincome(Numericnumber):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Gender:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Getanyfinancialaidtovarsity(Yes-No):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Group(Science-Arts-Commerse):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:Group(Science-Arts-Commerse).1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02xz7bo0yifplw151svjl0ccemgy].[sum:GuardianFinancialStatus:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02xz7bo0yifplw151svjl0ccemgy].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.02xz7bo0yifplw151svjl0ccemgy].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02xz7bo0yifplw151svjl0ccemgy].[Multiple Values]</rows>
+        <cols>[federated.02xz7bo0yifplw151svjl0ccemgy].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02xz7bo0yifplw151svjl0ccemgy].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02xz7bo0yifplw151svjl0ccemgy].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
